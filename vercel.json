@@ -1,0 +1,13 @@
+{
+  "build": {
+    "src": "api/app.py",
+    "use": "@vercle/python"
+  },
+
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/app.py"
+    }
+  ]
+}
