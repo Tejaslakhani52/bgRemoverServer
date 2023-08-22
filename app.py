@@ -97,7 +97,7 @@ from PIL import Image
 import rembg
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/process_image": {"origins": "http://localhost:3000/"}})
  
 @app.route('/process_image', methods=['POST'])
 def process_image():
