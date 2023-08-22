@@ -97,7 +97,7 @@ from PIL import Image
 import rembg
 
 app = Flask(__name__)
-CORS(app, resources={r"/process_image": {"origins": "http://localhost:3000/"}})
+CORS(app, resources={r"/process_image": {"origins": "https://bg-remover-delta.vercel.app/"}})
  
 @app.route('/process_image', methods=['POST'])
 def process_image():
